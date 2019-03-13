@@ -2,22 +2,11 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import Layout from '../components/Layout';
 
-const About = (props) => {
+const About = () => {
   return (
-    <div>
-      <Head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="../static/css/style.css"/>
-
-        <title>React App</title>
-      </Head>
-      <Header/>
+    <Layout title='เกี่ยวกับเรา'>
       <div className='container col-md-5'>
         <h3>สวัสดีครับ</h3>
         <p className='title text-justify mt-4 mb-4'>
@@ -28,8 +17,7 @@ const About = (props) => {
         </p>
         <h4 className='text-success'>จาก เฮลตี้ คาเฟ่</h4>
       </div>
-      <Footer company="Thanapon" email="thanapon.yenjam@gmail.com" />
-    </div>
+    </Layout> 
   );
 }
 
