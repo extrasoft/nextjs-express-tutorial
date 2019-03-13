@@ -36,6 +36,21 @@ class Detail extends Component {
             </div>
           </div>
         </div>
+        {/* รูปแบบการกำหนด style ของ nextjs */}
+        <style jsx>
+        {
+          `
+          .title {
+            color: darkgreen;
+            text-align: center;
+          }
+          .detail {
+            color: black;
+            word-spacing: 8px;
+          }
+          `
+        }
+        </style>
       </Layout>
     );
   }
