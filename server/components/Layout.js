@@ -5,7 +5,9 @@ import Head from 'next/head';
 
 // การ import ชื่อไฟล์ที่เป็น static จะต้องติดตั้ง module next-css หรือ next-sass ก่อน
 // และต้องไป config ไฟล์ที่ next.config.js ด้วย
-import '../static/css/style.css';
+
+// import '../static/css/style.css';
+import '../static/css/style.scss'; //import .scss จะต้องลงโมดูล node-sass เพิ่มด้วย
 
 class Layout extends Component {
   render() {
